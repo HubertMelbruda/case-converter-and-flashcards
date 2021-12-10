@@ -1,0 +1,7 @@
+.textarea {
+    display: flex;
+    flex-flow: wrap ;
+    width: 900px;
+    height: 200px;
+}
+

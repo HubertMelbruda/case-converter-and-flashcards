@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("./img/world-map.jpg");
+    background-position: center;
+    background-size: 180%;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+
+}
+
+h1 {
+    font-size: 1.2em;
+}
+
+#main-area {
+    display: flex;
+    height: 98vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.title {
+    display: flex;
+    background: #eedac0;
+    height: 50px;
+    width: 600px;
+    margin:10px;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+
+.container {
+    display: flex;
+    height: 600px;
+    width: 600px;
+    padding: 50px;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card {
+    height: 150px;
+    width: 150px;
+    position: relative;
+    transition: all 1s linear;
+    transform-style: preserve-3d;
+}
+
+.front,
+.back {
+    display: flex;
+    background: #eedac0;
+    height: 150px;
+    width: 150px;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #888888;
+    border-radius: 20%;
+    color:#ff8615;
+    font-size: 1.5em;
+    position: absolute;
+}
+
+.front {
+    z-index: 2;
+    backface-visibility: hidden;
+}
+
+.back {
+    z-index: 1;
+    transform: rotateY(180deg);
+}
+
+.cont-mexico:hover .card,
+.cont-papua:hover .card,
+.cont-iceland:hover .card,
+.cont-south-korea:hover .card,
+.cont-sweden:hover .card,
+.cont-georgia:hover .card,
+.cont-honduras:hover .card,
+.cont-tunisia:hover .card,
+.cont-austria:hover .card {
+    transform: rotateY(180deg);
+}
+
